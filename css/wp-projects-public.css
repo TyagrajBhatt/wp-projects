@@ -1,0 +1,100 @@
+/* Slider Wrapper */
+.wp-projects-slider {
+    width: 100%;
+    height: 500px; /* Adjust the height to make the slider bigger */
+    position: relative;
+    display: flex;
+}
+
+/* Project Item */
+.project-item {
+    position: relative;
+    width: 100%;
+}
+
+/* Image Styling */
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay for Darkening Effect */
+.project-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Project Information Styling */
+.project-info {
+    position: absolute;
+    bottom: 20px; /* Place text at the bottom of the image */
+    left: 20px;
+    color: #fff; /* White text */
+    z-index: 10;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds a text shadow for better readability */
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-location,
+.project-date {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.project-location i,
+.project-date i {
+    margin-right: 5px;
+    color: #fff;
+}
+
+/* Hover Effect */
+.project-item:hover .project-image img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+
+.slide-arrow{
+  position: absolute;
+  top: 40%;
+  margin-top: -15px;
+}
+.prev-arrow{
+  cursor: pointer;
+  left: -40px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.next-arrow{
+    cursor: pointer;
+  right: -40px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
